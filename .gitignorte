@@ -1,0 +1,9 @@
+*.php
+*.icloud
+*.xml
+wp/wp-content/cache/
+wp/wp-content/upgrade/
+wp/wp-content/ai1wm-backups
+wp/wp-content/w3tc-config
+wp/wp-content/languages
+wp/wp-includes/certificates
