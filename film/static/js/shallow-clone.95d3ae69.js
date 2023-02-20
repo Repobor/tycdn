@@ -1,0 +1,6 @@
+import{k as c}from"./kind-of.db8547f8.js";/*!
+ * shallow-clone <https://github.com/jonschlinkert/shallow-clone>
+ *
+ * Copyright (c) 2015-present, Jon Schlinkert.
+ * Released under the MIT License.
+ */const t=Symbol.prototype.valueOf,s=c;function o(e,r){switch(s(e)){case"array":return e.slice();case"object":return Object.assign({},e);case"date":return new e.constructor(Number(e));case"map":return new Map(e);case"set":return new Set(e);case"buffer":return y(e);case"symbol":return i(e);case"arraybuffer":return u(e);case"float32array":case"float64array":case"int16array":case"int32array":case"int8array":case"uint16array":case"uint32array":case"uint8clampedarray":case"uint8array":return f(e);case"regexp":return a(e);case"error":return Object.create(e);default:return e}}function a(e){const r=e.flags!==void 0?e.flags:/\w+$/.exec(e)||void 0,n=new e.constructor(e.source,r);return n.lastIndex=e.lastIndex,n}function u(e){const r=new e.constructor(e.byteLength);return new Uint8Array(r).set(new Uint8Array(e)),r}function f(e,r){return new e.constructor(e.buffer,e.byteOffset,e.length)}function y(e){const r=e.length,n=Buffer.allocUnsafe?Buffer.allocUnsafe(r):Buffer.from(r);return e.copy(n),n}function i(e){return t?Object(t.call(e)):{}}var p=o;export{p as s};

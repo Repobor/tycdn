@@ -1,0 +1,1 @@
+import{R as e}from"./index.df009344.js";const s="/halls";class l{static getList(t,r,a,i){return e.get(s,{PageNum:t,PageSize:r<1?1:r,Status:i,Search:a})}static getById(t){return e.get(`${s}/${t}`)}static add(t){return e.post(s,t)}static put(t){return e.put(`${s}/${t.id}`,t)}static del(t){return e.delete(`${s}/${t}`)}}export{l as H};

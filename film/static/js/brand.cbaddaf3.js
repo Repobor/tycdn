@@ -1,0 +1,1 @@
+import{R as r}from"./index.df009344.js";const e="/brand";class n{static get(t){return r.get(`${e}/${t}`)}static put(t,a){return r.put(`${e}/${t}`,{Ids:a})}static getFromMock(){return r.service.get("https://mock.apifox.cn/m1/1874695-0-default/brand/1")}}export{n as b};

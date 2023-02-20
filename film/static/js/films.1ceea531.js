@@ -1,0 +1,1 @@
+import{R as e}from"./index.df009344.js";const s="/films";class l{static getList(t,r,i,a,u,c,p,n){return e.get(s,{CatId:i,YearId:a,SourceId:u,Search:c,OrderBy:p,PageNum:t,PageSize:r<1?1:r,Status:n})}static getById(t){return e.get(`${s}/${t}`)}static add(t){return e.post(s,t)}static put(t){return e.put(`${s}/${t.id}`,t)}static del(t){return e.delete(`${s}/${t}`)}}export{l as F};
